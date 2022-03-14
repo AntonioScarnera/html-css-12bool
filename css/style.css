@@ -3,7 +3,15 @@
 .debug{
     border: 1px solid black;
 }
-
+a{
+    font-size: 20px;
+    color: #006cfa;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    text-decoration: underline red;
+}
 .box, .box-nested{
     min-height: 50px;
     background-color: #006cfa;

@@ -1,0 +1,33 @@
+.debug{
+    border: 1px solid black;
+}
+body{
+    background-color: green;
+}
+a{
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(38, 0, 255);
+    text-decoration: underline rgb(38, 0, 255);
+}
+.box{
+    width: 60px;
+    height:60px;
+    background-color: #D18B46;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    padding: 15px;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-lightbrown{
+    background-color: #FECE9E;
+}
+i{
+    font-size: 30px;
+}

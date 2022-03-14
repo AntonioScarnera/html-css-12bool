@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/chess-framework.css">
+    <link rel="stylesheet" href="css/chess-style.css">
+    <title>Chess</title>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="container-fluid">
+            <a href="index.html">Home</a>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug">
+                    <div class="box"></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white"></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">A</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">B</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">C</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">D</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">E</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">F</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">G</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">H</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white"></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">8</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-rook"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-knight"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-bishop"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-queen"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-king"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-bishop"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-knight"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-rook"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">8</div>
+                </div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">7</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-solid fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">7</div>
+                </div>
+                <div class="col-xs-1 debug"><div class="box"></div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">6</div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">6</div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">5</div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">5</div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">4</div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">4</div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">3</div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-lightbrown"></div></div>
+                <div class="col-xs-1 debug"><div class="box bg-white">3</div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">2</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-pawn"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">2</div>
+                </div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">1</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-rook"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-knight"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-bishop"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-queen"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-king"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-bishop"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"><i class="fa-regular fa-chess-knight"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-lightbrown"><i class="fa-regular fa-chess-rook"></i></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">1</div>
+                </div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug">
+                    <div class="box"></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white"></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">A</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">B</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">C</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">D</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">E</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">F</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">G</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white">H</div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box bg-white"></div>
+                </div>
+                <div class="col-xs-1 debug">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+                <div class="col-xs-1 debug"><div class="box"></div></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
